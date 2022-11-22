@@ -1,0 +1,17 @@
+package TestPackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TechnicalTest_Class {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dines\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.pearson.com/en-gb.html");
+		driver.manage().window().maximize();
+		driver.close();
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package TestPackage;
+
+public class TechnicalTest_Class {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dines\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+	}
+
+}

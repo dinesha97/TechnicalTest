@@ -1,0 +1,36 @@
+package TestPackage;
+
+import java.util.concurrent.TimeUnit;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TechnicalTest_Class {
+
+	public static void main(String[] args) {
+		String expectedURL = "https://www.pearson.com/en-gb.html";
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\dines\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.pearson.com/en-gb.html");
+		driver.manage().window().maximize();
+		//check the correct URL navigation
+		try {
+			
+		}
+		catch(Throwable pageNavigationError) 
+		{
+			System.out.println("navigated to the wrong URL");
+		}
+		
+		
+		
+		
+		
+		
+		
+		driver.close();
+		
+	}
+
+}
